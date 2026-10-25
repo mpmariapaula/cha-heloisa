@@ -42,7 +42,6 @@ jobs:
       - name: Enviar arquivos compilados
         uses: actions/upload-pages-artifact@v3
         with:
-          name: github-pages-${{ github.run_id }}
           path: dist
 
   deploy:
