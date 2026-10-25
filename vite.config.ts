@@ -15,6 +15,7 @@ const siteConfiguration = fs.existsSync(siteConfigPath)
   : {}
 
 export default defineConfig({
+  base: '/cha-heloisa/',
   plugins: [react(), tailwindcss()],
   define: {
     'process.env.SITE_CONFIG': JSON.stringify(siteConfiguration),
